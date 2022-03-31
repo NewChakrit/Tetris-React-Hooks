@@ -13,7 +13,7 @@ export const useGameStatus = (rowsCleared) => {
       setScore((prev) => prev + linePoints[rowsCleared - 1] * (level + 1));
       setRows((prev) => prev + rowsCleared);
     }
-  }, [level, linePoints, rowsCleared]);
+  }, [level, rowsCleared]);
 
   useEffect(() => {
     calcScore();
